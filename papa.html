@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡FELIZ DÍA DEL PADRE!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(P.jpeg);
+            background-size: auto;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            margin: 100px auto;
+            padding: 30px;
+            max-width: 600px;
+            box-shadow: 0 0 20px #aebb37;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #FFD700;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        button {
+            background-color: #FFD700;
+            color: black;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #e6c200;
+        }
+    </style>
+</head>
+<body>
+
+    <audio id="music" autoplay loop>
+        <source src="Humbe - Fantasmas.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="container">
+        <h1>¡Feliz Día del Padre!</h1>
+        <img src="papa.jpeg" width="300px" alt="Imagen de Papá">
+        <p>
+            Querido Papá,<br><br>
+            En este día tan especial, quiero agradecerte por todo lo que hiciste por mí. 
+            Eres mi guía, mi apoyo y mi héroe. Gracias por estar siempre a mi lado, 
+            por enseñarme valores y por llenar mi vida de amor y alegría.<br><br>
+            ¡Te quiero mucho!<br><br>
+            Con cariño,<br>
+            Tu hijo Alan
+        </p>
+        <button onclick="playMusic()">¡Reproducir Música!</button>
+    </div>
+
+    <script>
+        function playMusic() {
+            const music = document.getElementById('music');
+            music.play();
+            alert('¡Disfruta la música y feliz Día del Padre!');
+        }
+    </script>
+
+</body>
+</html>
